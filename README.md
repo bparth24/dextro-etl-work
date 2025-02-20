@@ -227,7 +227,7 @@ def determine_chunk_strategy(file_metadata):
 
 ### Checkpoint System for Recovery
 
-Let me share a scenario I encountered: Processing large healthcare datasets (typically 60-200GB containing 2-3 million records), we implemented a strategic chunking approach. Each patient record averaged 30-40KB due to comprehensive medical history, notes, and related clinical data. Here's how we handled it:
+Let me share a scenario I encountered: Processing large healthcare datasets (typically 60-200GB containing 2-3 million records), I implemented a strategic chunking approach. Each patient record averaged 30-40KB due to comprehensive medical history, notes, and related clinical data. Here's how I handled it:
 
 ```python
 class ProcessingCheckpoint:
