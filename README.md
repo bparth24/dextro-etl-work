@@ -1,4 +1,4 @@
-# Automating Healthcare ETL: Real Challenges and Solutions from the Trenches
+# Automating Healthcare ETL: Real Challenges and Solutions
 
 When I started working on automating the healthcare data pipeline for one of my clients, I quickly realized why the team had been hesitant to fully automate the process. I was dealing with healthcare data from multiple sources, delivered in various CSV formats on CDs, and each source had its own quirks. Manual verification between stages felt safer, but it was creating significant bottlenecks in our operation.
 
