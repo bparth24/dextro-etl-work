@@ -2,7 +2,7 @@
 
 When I started working on automating the healthcare data pipeline for one of my clients, I quickly realized why the team had been hesitant to fully automate the process. I was dealing with healthcare data from multiple sources, delivered in various CSV formats on CDs, and each source had its own quirks. Manual verification between stages felt safer, but it was creating significant bottlenecks in our operation.
 
-**Disclaimer:** The code examples and implementations provided below are for illustrative purposes only. Column names, function names, and specific implementations have been simplified and generalized to demonstrate the concepts. All sensitive data fields (like SSN, patient IDs) shown here are fictional examples used purely for demonstration.
+**Disclaimer:** The code examples and implementations provided below are for illustrative purposes only. Column names, function names, and specific implementations have been simplified and generalized to demonstrate the concepts. All sensitive data fields (like SSN, and patient IDs) shown here are fictional examples used purely for demonstration.
 
 ## The Real-World Challenges
 
@@ -15,9 +15,11 @@ The standard ETL process would fail on these inconsistencies, and I'd only disco
 
 ## Building the Automated Validation Framework
 
+![ELT Data Pipeline](etl_data_pipeline.png)
+
 ### Initial Data Intake Validation
 
-I started by building a comprehensive validation process that could handle these edge cases. Here below is how I approached:
+I started by building a comprehensive validation process that could handle these edge cases. Here below is how I approached it:
 
 #### 1. Pre-Processing Checks
 First, I implemented robust file handling:
